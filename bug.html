@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    //Incorrect way to add text to a div
+    document.getElementById("myDiv").innerText = document.getElementById("myDiv").innerText + "<p>This is a paragraph.</p>";
+  </script>
+</body>
+</html>
